@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>-----> WRITE A PROGRAM TO PRINT THESE PATTERNS</h1>
+    <H3>1) Enter rows = 5 </H3>
+
+            <pre><h1><b></b>
+                s 
+                a i
+                k u m 
+                a r * *
+                * * * * *   </b></h1>
+            </pre>
+
+
+
+            <h3>2) Enter rows = 5</h3>
+
+                <pre><b><h1>
+                    
+                1       5
+                  2   4
+                    3
+                  2   4
+                1       5
+                </h1></b></pre>
+
+    <script>
+        
+
+// s 
+// a i
+// k u m 
+// a r * *
+// * * * * *
+
+
+
+ 
+
+
+let rows= +prompt("enter rows : ");
+str="saikumar";
+value=0;
+for(i=1;i<=rows;i++){
+    res=""
+  for(j=1;j<=i;j++){
+      if(str[value]==undefined){
+          res=res+"* "
+      }
+      else{
+          res+=str[value]+" "
+          value++
+      }
+      }
+  console.log(res)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 1       5
+//   2   4
+//     3
+//   2   4
+// 1       5
+
+
+let rows1=+promp("Enter rows = 5");
+for(i=1;i<=rows1;i++){
+    res=""
+    for(j=1;j<=rows1;j++){
+        if(i==j  || j+i==rows1+1){
+            res+=j+" "
+            }
+            else{
+                res+="  "
+            }
+    }
+    console.log(res);
+}
+
+    </script>
+</body>
+</html>
